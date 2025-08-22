@@ -11,7 +11,7 @@ export default defineConfig({
       exposes: {
         "./ProductApp": "./src/App.jsx",
       },
-      shared: ['react', 'react-dom'],
+      shared: ['react', 'react-dom', 'react-redux', '@reduxjs/toolkit'],
     })
   ],
    server: {

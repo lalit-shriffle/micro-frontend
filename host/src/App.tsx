@@ -3,6 +3,7 @@ import ProductsApp from "products/ProductApp"
 import CartApp from "cart/CartApp"
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+
 function App() {
   const items = useSelector((state: any) => state.cart.items);
   // console.log("Items", items)
