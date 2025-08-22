@@ -6,12 +6,16 @@ function App() {
   return (
     <>
       <h1>Host App</h1>
-      <BrowserRouter>
+      {/* Centralized */}
+      {/* <BrowserRouter>
         <Routes>
-          <Route path='/products' element={<ProductsApp/>} />
-          <Route path="/cart" element={<CartApp />}/>
+          <Route path='/products/*' element={<ProductsApp/>} />
+          <Route path="/cart/*" element={<CartApp />}/>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      {/* Passing props to remote component */}
+      <CartApp data={'data'} />
     </>
   )
 }

@@ -1,11 +1,12 @@
 
 import './App.css'
 
-function App() {
+function App({data}:any) {
 
   return (
     <>
       <h1>Cart App</h1>
+      <p>{data}</p>
     </>
   )
 }
